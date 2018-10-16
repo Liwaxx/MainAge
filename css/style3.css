@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+@font-face {font-family: ohwhale;
+    src: url(../fonts/ohwhale.ttf);
+}
+body{display:block;
+-khtml-user-select:none;
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+unselectable:on;}
+
+#kembali {
+    position: fixed;
+    padding: 5% 0 0 5%;
+}
+.parallax {
+    background-image: url(../asset/congklak.jpg);
+    background-position: 40%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+.content{
+    color: white;
+    font-size: 50px;
+    height: 100%;
+    background-image: url(../asset/background2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.gambaratas {
+  width: 100%;
+  background-image: url(../asset/dakon.jpg);
+  background-size: cover;
+  background-position: bottom;
+  height: 150px;
+  opacity: 0.7;
+}
+.judul {
+    text-align: right;
+    font-family: ohwhale;
+    color: white;
+    padding: 10% 0 0 0;
+    font-size: 60px;
+    margin-right: 10%;
+    padding-top: 50%;
+}
+#desc {
+    padding: 15% 10% 0 10%;
+    text-align: center;
+    font-family: ohwhale;
+    font-size: 25px;
+}
+
+#on {
+    padding: 5% 10% 0 10%;
+    text-align: center;
+    font-family: ohwhale;
+    font-size: 25px;
+    color: #B59F2F;
+}
+
+#video{
+    width: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+#judul{
+    font-family: ohwhale;
+    padding-top: 10%;
+    text-align: center;
+    font-size: 60px;
+    color: #B59F2F;
+}
+#scroll2 {
+    float: right;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+::selection {
+background: transparent;
+}
+        

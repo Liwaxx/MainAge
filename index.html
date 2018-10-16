@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>splashscreen</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body style="background-color: #1E5A82; text-align: center;">
+    <audio src="asset/splash.mpeg" autoplay></audio>
+      <script>
+        $(document).ready(function(){
+          $("img.ss1").hide();
+            $("img.ss2").hide();
+              $("img.ss3").hide();
+          setTimeout(function(){
+            $("img.ss1").fadeIn(1000,function(){
+              $("img.ss1").fadeOut(750,function(){
+                $("img.ss3").fadeIn(1000,function(){
+                  $("img.ss3").fadeOut(750,function(){
+                    $("img.ss2").fadeIn(1000,function(){
+                      $("img.ss2").fadeOut(750,function(){
+                    location.replace("mainmenu.html")
+                  });
+                });
+              });
+            });
+          });
+                      });
+          }, 50);
+        });
+        </script>
+    <img class="ss1" src="asset/s-dikbud.png" alt="" style="height:100vh; width:50vh;">
+    <img class="ss2" src="asset/s-mainage.png" alt="" style="height:100vh; width:50vh;">
+    <img class="ss3" src="asset/splash_un.png" alt="" style="height:100vh; width:50vh;">
+  </body>
+</html>

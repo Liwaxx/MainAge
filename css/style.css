@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html{
+    font-size: 50px;
+    background-image: url(../asset/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    transition: 0.5s;
+    padding-bottom: 70px;
+}
+
+body{display:block;
+-khtml-user-select:none;
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+unselectable:on;}
+
+/*SIDEBAR*/
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #353852; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s;
+    border: none; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 25px 0px 0px 25px;
+    text-decoration: none;
+    font-size: 20px;
+    color: lightblue;
+    display: block;
+    transition: 0.3s;
+    text-align: left;
+    font-family: ohwhale;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.close {
+    background-image: url(../asset/back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 150px;
+    margin: -60px 0 0 0;
+}
+.gambartent {
+    width: 10%;
+    float: left;
+    margin: 25px 20px 0 15px;
+}
+.tentang2 {
+    border-top: 1px lightblue solid;
+    border-bottom: 1px lightblue solid;
+    padding: 0 0 25px 0;
+}
+.tentang {
+    border-bottom: 1px lightblue solid;
+    padding: 0 0 25px 0;
+}
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    font-size: 35px;
+    color: white;
+}
+
+
+/*SPAN*/
+.navv {
+  font-size: 30px;
+  cursor: pointer; 
+  color: #B59F2F;
+  padding: 0 0 0 20px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/*CONTENT*/
+.logo {
+    width: calc(50%);
+    margin-left: calc(25%);
+}
+.content ul li{
+  list-style: none;
+}
+.icon {
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.subcon {
+    width: 100%;
+    height: 70px;
+    background-color: #F2EAC9;
+    border-radius: 50px;
+    margin-bottom: 15%;
+}
+.subcon2 {
+    width: 100%;
+    height: 70px;
+    background-color: #F2EAC9;
+    border-radius: 50px;
+}
+.gambar{
+    display: block;
+    float: left;
+    height: 70px;
+    width: 30%;
+    background-color: #F1DE9A;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+#dakon {
+  width: 90%;
+  padding: 0;
+  margin-top: -10%;
+}
+#egrang {
+    width: 75%;
+    margin-top: -10%;
+}
+#jledoran {
+  width: 90%;
+}
+#kelereng {
+    width: 90%;
+}
+#pandeman {
+    width: 110%;
+}
+
+@font-face {font-family: ohwhale;
+    src: url(../fonts/ohwhale.ttf);
+}
+
+.refsubjudul {
+    text-decoration: none;
+}
+
+.subjudul {
+    font-family: ohwhale;
+    font-size: 30px;
+    padding: 17px 0 0 40%;
+    color: #B59F2F;
+}
+
+::selection {
+background: transparent;
+}
+
+@media only screen and (max-width: 320px) {
+    body {
+        background-color: lightblue;
+    }
+}

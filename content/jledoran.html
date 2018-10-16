@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+      <link rel="stylesheet" type="text/css" href="../css/style4.css">  
+      <link rel="stylesheet" type="text/css" href="../css/animate.css">   
+      <script src="../js/jquery.js" type="text/javascript"></script>
+       <script type="">
+        function replace(){
+        location.replace("../mainmenu.html")
+        }
+      </script>
+  </head>
+  <body>
+    <div class="parallax">
+      <a id="kembali" onclick="replace()">
+        <img src="../asset/left.png" style="width: 30px;">
+      </a>
+      <p class="judul">Pletokan</p>
+      <div class="scroll">
+        <a href="#content" id="scroll2"><img class="animated infinite bounce" src="../asset/scroll3.png" alt="" width="40px" height="40px"></a>
+      </div>
+    </div>
+
+    <div id="content" class="content">
+      <div class="gambaratas">
+      </div>
+      <h1 id="judul">Pletokan</h1>
+      <p class="desc">Pletokan/Jedoran adalah sebuah nama senjata mainan yang terbuat dari bambu yang pelurunya terbuat dari kertas yang dibasahi atau biji jambu atau kembang. Permainan ini merupakan permainan khas masyarakat Betawi. Mereka yang memainkan permainan ini, seolah-olah sedang berada dalam pertempuran. Dengan peluru yang terbuat dari benda yang tidak berbahaya, membuat permainan ini sangat aman dan mudah di dapatkan.</p>
+      <p id="on">
+        #Untuk memutar video dibawah ini, nyalakan jaringan internetmu!
+      </p>
+      <br><br><br>
+      <iframe id="video" width="600px" height="400px" src="https://www.youtube.com/embed/mCmguTqm1ZY" frameborder="0" allow="control; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </body>
+</html>
+
+<script>
+  $(document).ready(function(){
+    $('.scroll a').click(function(e){
+      e.preventDefault();
+      target = $(this).attr("href");
+      $('html, body').animate({
+        scrollTop: $(target).offset().top
+    }, 700);
+    });
+  });
+</script>
